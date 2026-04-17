@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Profile Card - HNG Stage 1b</title>
+  <link rel="stylesheet" href="./style.css">
+</head>
+<body>
+  <article data-testid="test-profile-card" class="profile-card">
+    <div class="profile-header">
+      <figure>
+        <img 
+          src="./profileImg.jpg" 
+          alt="Adetayo's profile picture" 
+          data-testid="test-user-avatar">
+      </figure>
+    </div>
+    <div class="profile-body">
+      <h2 data-testid="test-user-name">Adetayo</h2>
+      <p data-testid="test-user-bio" class="bio">
+        Passionate Frontend Developer currently in HNG Internship. I love building clean, accessible and responsive user interfaces with modern technologies.
+      </p>
+      <!-- Current Time in Milliseconds -->
+      <div class="time-section">
+        <strong>Current Time (ms):</strong>
+        <span data-testid="test-user-time" id="current-time">0</span>
+      </div>
+      <!-- Social Links -->
+      <nav data-testid="test-user-social-links" class="social-links">
+        <a href="https://github.com/adetayoishola" target="_blank" data-testid="test-user-social-github">GitHub</a>
+        <a href="https://linkedin.com/in/adetayoishola" target="_blank" data-testid="test-user-social-linkedin">LinkedIn</a>
+        <a href="https://instagram.com/theadetayoishola" target="_blank" data-testid="test-user-social-instagram">Instagram</a>
+      </nav>
+      <!-- Hobbies -->
+      <section data-testid="test-user-hobbies" class="hobbies">
+        <h3>Hobbies</h3>
+        <ul>
+          <li>Coding</li>
+          <li>Reading</li>
+          <li>Football</li>
+        </ul>
+      </section>
+      <!-- Dislikes -->
+      <section data-testid="test-user-dislikes" class="dislikes">
+        <h3>Dislikes</h3>
+        <ul>
+          <li>Procrastination</li>
+          <li>Poor Hygiene</li>
+          <li>Laziness</li>
+        </ul>
+      </section>
+    </div>
+  </article>
+  <script src="./index.js"></script>
+</body>
+</html>
+

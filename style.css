@@ -1,0 +1,153 @@
+*	{
+  Margin: 0;
+  Padding: 0;
+  Box-sizing: border-box;
+}
+
+body {
+  Background-color: #f8f9fa;
+  Font-family: ‘Segoe UI’, Tahoma, Geneva, Verdana, sans-serif;
+  Min-height: 100vh;
+  Display: flex;
+  Align-items: center;
+  Justify-content: center;
+  Padding: 20px;
+}
+
+.profile-card {
+  Background-color: white;
+  Width: 100%;
+  Max-width: 420px;
+  Border-radius: 20px;
+  Box-shadow: 0 10px 40px rgba(0, 0, 0, 0.12);
+  Overflow: hidden;
+}
+
+/* Header with Avatar */
+.profile-header {
+  Background: linear-gradient(135deg, #4f46e5, #7c3aed);
+  Padding: 35px 0 20px;
+  Text-align: center;
+}
+
+.profile-header figure {
+  Margin: 0 auto;
+  Width: 140px;
+  Height: 140px;
+  Border: 6px solid white;
+  Border-radius: 50%;
+  Overflow: hidden;
+  box-shadow: 0 5px 20px rgba(0, 0, 0, 0.2);
+}
+
+.profile-header img {
+  Width: 100%;
+  Height: 100%;
+  Object-fit: cover;
+}
+
+/* Body */
+.profile-body {
+  Padding: 30px 25px;
+}
+
+.profile-body h2 {
+  Font-size: 1.8rem;
+  Text-align: center;
+  Margin-bottom: 12px;
+  Color: #1f2937;
+}
+
+.bio {
+  Color: #555;
+  Line-height: 1.65;
+  Text-align: center;
+  Margin-bottom: 25px;
+}
+
+/* Time Section */
+.time-section {
+  Background-color: #f0f4ff;
+  Padding: 14px 20px;
+  Border-radius: 12px;
+  Margin-bottom: 25px;
+  Text-align: center;
+}
+
+.time-section strong {
+  Display: block;
+  Margin-bottom: 5px;
+  Color: #374151;
+  Font-size: 0.95rem;
+}
+
+/* Social Links */
+.social-links {
+  Display: flex;
+  Justify-content: center;
+  Gap: 15px;
+  Margin-bottom: 30px;
+}
+
+.social-links a {
+  Color: #4f46e5;
+  Text-decoration: none;
+  Font-weight: 600;
+  Padding: 8px 18px;
+  Border: 2px solid #4f46e5;
+  Border-radius: 30px;
+  Transition: all 0.3s;
+}
+
+.social-links a:hover {
+  Background-color: #4f46e5;
+  Color: white;
+}
+
+/* Hobbies & Dislikes */
+Section {
+  Margin-bottom: 28px;
+}
+
+Section h3 {
+  Margin-bottom: 10px;
+  Color: #1f2937;
+  Font-size: 1.1rem;
+}
+
+Section ul {
+  List-style: none;
+}
+
+Section li {
+  Padding: 6px 0;
+  Color: #555;
+  Position: relative;
+  Padding-left: 22px;
+}
+
+Section li:before {
+  Content: “•”;
+  Position: absolute;
+  Left: 0;
+  Color: #4f46e5;
+  Font-weight: bold;
+}
+
+/* Responsive */
+@media (max-width: 480px) {
+  .profile-card {
+    Margin: 10px;
+    Border-radius: 16px;
+  }
+  
+  .profile-header {
+    Padding: 30px 0 15px;
+  }
+  
+  .profile-header figure {
+    Width: 120px;
+    Height: 120px;
+  }
+}
+
