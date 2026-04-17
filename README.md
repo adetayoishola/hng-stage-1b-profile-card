@@ -16,6 +16,7 @@ A clean, responsive and accessible Profile Card built for HNG Frontend Stage 1b.
 - Vanilla JavaScript
 
 ## Live Demo
+https://hng-stage-1b-profile-card-pi.vercel.app/
 
 
 
